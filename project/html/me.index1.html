@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index1.html</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="../css/me.style1.css">
+    <link rel="stylesheet" href="../css/me.footer.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    
+</head>
+<body ng-controller="ctl" ng-app="myApp">
+    <div class="wrapper">
+        <header></header>
+        <main>
+            <div class="nav">
+                <ul>
+                   <li><span class="fa fa-building-o"><a href="#">我的订单</a></span></li>
+                    <li><span class="fa fa-heart"><a href="#">收藏</a></span></li>
+                    <li><span class="fa fa-money"><a href="#">我的资产</a></span></li>
+                </ul>
+                <ol>
+                   <li><span class="fa fa-envelope"><a href="#">消息</a></span></li>
+                    <li><span class="fa fa-file-text-o"><a href="#">我的发布</a></span></li>
+                    <li><span class="fa fa-female"><a href="#">美肌测试</a></span></li>
+                </ol>
+            </div>
+            <div class="info">
+                <div><span class="fa fa-file"></span><h2>地址管理</h2><em class="fa fa-chevron-right"></em></div>
+                <div><span class="fa fa-map-marker"></span><h2>地发货地区</h2><p>北京市</p><em class="fa fa-chevron-right"></em></div>
+                <div><span class="fa fa-power-off"></span><h2>客服热线</h2><p>400-6885-888</p><em class="fa fa-chevron-right"></em></div>
+        <div><span class="fa fa-home"></span><h2>设置</h2><em class="fa fa-chevron-right"></em></div>        
+            </div>
+        </main>
+        <footer ng-include="'footer.html'"></footer>
+    </div>
+    <script src="../lib/setfontsize.js"></script>
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/jquery.2.1.4.min.js"></script>
+    <script>
+       
+        var myApp=angular.module("myApp",[]);
+            myApp.controller("ctl",["$scope",function($scope){
+            
+            }])
+            
+            
+    </script>
+</body>
+</html>
