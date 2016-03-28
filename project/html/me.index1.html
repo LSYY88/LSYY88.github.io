@@ -15,8 +15,10 @@
 </head>
 <body ng-controller="ctl" ng-app="myApp">
     <div class="wrapper">
+       
         <header></header>
-        <main>
+        <main id="main">
+           <div id="scroll">
             <div class="nav">
                 <ul>
                    <li><span class="fa fa-building-o"><a href="#">我的订单</a></span></li>
@@ -35,12 +37,14 @@
                 <div><span class="fa fa-power-off"></span><h2>客服热线</h2><p>400-6885-888</p><em class="fa fa-chevron-right"></em></div>
         <div><span class="fa fa-home"></span><h2>设置</h2><em class="fa fa-chevron-right"></em></div>        
             </div>
+            </div>
         </main>
         <footer ng-include="'footer.html'"></footer>
     </div>
     <script src="../lib/setfontsize.js"></script>
     <script src="../lib/angular.min.js"></script>
     <script src="../lib/jquery.2.1.4.min.js"></script>
+    <script src="../lib/iscroll.js"></script>
     <script>
        
         var myApp=angular.module("myApp",[]);
@@ -48,6 +52,24 @@
             
             }])
             
+            ;(function(w,d){
+            
+               var myIscroll; document.addEventListener("touchmove",function(e){
+                e.preventDefault();
+                },false)
+        document.addEventListener("DOMContentLoaded",loaded,false)        
+            function loaded(){
+                myIscroll=new IScroll("main",{
+                    VScrollbars:false,
+                    hideScrollbar:true,
+                    mouseWheel:false,
+                    disableMouse:true
+                
+                })
+            
+            }
+            
+            })(window,document);
             
     </script>
 </body>
