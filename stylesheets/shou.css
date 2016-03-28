@@ -14,5 +14,7 @@ body{
 a{
     display:block;
     background:url(../images/2.jpg)no-repeat;
-    background-size: cover;
+    width:1000px;
+    height:206px;
+    
 } 
