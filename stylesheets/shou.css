@@ -104,6 +104,7 @@ body{font-size:1em;}
 body{
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 .wrapper{
     width:100%;
@@ -111,8 +112,8 @@ body{
 }
 .wrapper a{
     display:block;
-    background:url(../images/1.jpg);
+    background:url(../images/1.jpg) no-repeat;
     width:100%;
-    height:100%;
-    background-size:contain;
+    height:48rem;
+    background-size:auto;
 }
