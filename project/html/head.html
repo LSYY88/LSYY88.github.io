@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/head.css">
+</head>
+<body ng-controller="ctl">
+    <div class="wrapper" ng-include="'../html/me.resouce.html'"></div>
+    <div class="head-shadow">
+            <div class="info-1">
+                <p>从手机相册选择</p>
+                <p>拍照</p>
+            </div>
+            <div class="info-2">
+                <p>取消</p>
+            </div>
+        
+        
+        
+    </div>
+    <script src="../lib/setfontsize.js"></script>
+    <script src="../lib/angular.min.js"></script>
+    <script>
+        var myApp=angular.module("myApp",[]);
+            myApp.controller("ctl",["$scope",function($scope){
+                
+            
+            }])
+    </script>
+</body>
+</html>
