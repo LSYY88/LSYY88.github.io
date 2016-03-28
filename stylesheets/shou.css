@@ -16,5 +16,6 @@ a{
     background:url(../images/2.jpg)no-repeat;
     width:1000px;
     height:206px;
+    background-size:cover;
     
 } 
