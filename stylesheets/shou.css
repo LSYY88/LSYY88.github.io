@@ -10,10 +10,8 @@ body{
 .wrapper{
     width: 100%;
     height: 100%;
-    background:url(../images/2.jpg)no-repeat;
-    background-size:100% 100%;
 }
-/*a{
+a{
     display:block;
     background:url(../images/2.jpg)no-repeat;
     background-size:100% 100%;
@@ -21,4 +19,4 @@ body{
     height: 100%;
     
     
-} */
+} 
