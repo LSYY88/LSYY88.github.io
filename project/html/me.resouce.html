@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
@@ -11,19 +12,92 @@
     <link rel="stylesheet" href="../css/me.resouce.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
 </head>
+
 <body>
-   <div class="wrapper">
-       <header><span class="fa fa-chevron-left"></span><h1>编辑资料</h1><h3>保存</h3></header>
-       <main>
-           <div class="content">
-               <div><p>头像</p><span></span><a href="./head.html" class="fa fa-chevron-right"></a></div>
-               <div><p>昵称</p><span>请填写</span><a href="#" class="fa fa-chevron-right"></a></div>
-               <div><p>性别</p><span>女</span><a href="#" class="fa fa-chevron-right"></a></div>
-               <div><p>生日</p><span>请填写</span><a href="#" class="fa fa-chevron-right"></a></div>
-           </div>
-           <div class="last"><p>手机号码</p><span>18310012079</span><a href="#" class="fa fa-chevron-right"></a></div>
-       </main>
-   </div>
+    <div class="wrapper">
+        <header><span class="fa fa-chevron-left"></span>
+            <h1>编辑资料</h1>
+            <h3>保存</h3></header>
+        <main>
+            <div class="content">
+                <div>
+                    <p>头像</p><span></span>
+                    <a href="./head.html" class="fa fa-chevron-right"></a>
+                </div>
+                <div>
+                    <p>昵称</p><span>请填写</span>
+                    <a href="#" class="fa fa-chevron-right"></a>
+                </div>
+                <div>
+                    <p>性别</p><span class="female">女</span>
+                    <a href="#" class="fa fa-chevron-right"></a>
+                </div>
+                <div>
+                    <p>生日</p><span>请填写</span>
+                    <a href="#" class="fa fa-chevron-right"></a>
+                </div>
+            </div>
+            <div class="last">
+                <p>手机号码</p><span>18310012079</span>
+                <a href="#" class="fa fa-chevron-right"></a>
+            </div>
+            <div class="info">
+                <span class="cancle">取消</span>
+                <span class="confirm"><a href="#">确认</a></span>
+            </div>
+            <div class="sex">
+                <p>
+                    <label for="nv">女</label>
+                    <input type="checkbox" value="女" id="nv">
+                </p>
+                <p>
+                    <label for="nan">男</label>
+                    <input type="checkbox" value="男" id="nan">
+                </p>
+            </div>
+        </main>
+    </div>
     <script src="../lib/setfontsize.js"></script>
+    <script src="../lib/jquery.2.1.4.min.js"></script>
+    <script>
+        ;
+        (function ($) {
+            $(".female").on("click", function () {
+                $(".info").show();
+                $(".sex").show();
+
+            })
+
+            function sex() {
+                $("input").on("click", function () {
+                    if ($(this).is(":checked")) {
+                        $(".female").html($(this).val());
+                        $(this).parent().addClass("bg").siblings().removeClass("bg");
+                    }
+
+                })
+            }
+            sex();
+            $(".cancle").on("click", function () {
+                $(".sex").hide();
+                $(".info").hide();
+
+            })
+            $(".confirm").on("click", function () {
+                $(".sex").hide();
+                $(".info").hide();
+
+            })
+
+            function f1() {
+                n = 999;
+
+                
+            }　　
+            f1();　
+            // 999
+        })(jQuery);
+    </script>
 </body>
+
 </html>

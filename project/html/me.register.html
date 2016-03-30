@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/me.register.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="fa fa-chevron-left"></h1>
+            <h1>填写手机号</h1>
+        </header>
+        <main>
+            <p>
+
+                <label for="text">昵称</label>
+                <input type="text" placeholder="例如:北风" id="text">
+            </p>
+            <p>
+                <span>手机归属地</span>
+                <span>中国大陆</span>
+            </p>
+            <p>
+                <input type="text" value="+86">
+            </p>
+            <p>
+                <label for="password">登陆密码</label>
+                <input type="text" id="password" placeholder="需组合字母,数字,符合">
+            </p>
+            <button>注册</button>
+            <h3>同意支付宝服务协议和淘宝服务协议</h3>
+        </main>
+    </div>
+    <script src="../lib/setfontsize.js"></script>
+    <script src="../lib/jquery.2.1.4.min.js"></script>
+    <script>
+        ;(function($){
+            $("#text").on("focus",function(){
+                alert($(this).val());
+            })
+        
+        
+        })(jQuery);
+    
+    </script>
+</body>
+
+</html>
